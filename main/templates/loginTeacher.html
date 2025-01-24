@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #304442;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .loginContainer {
+            background: #284F56;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .loginContainer h2 {
+            margin-bottom: 20px;
+        }
+        .loginContainer input[type="text"],
+        .loginContainer input[type="password"] {
+            width: 96%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #F0E7E7;
+            border-radius: 5px;
+
+        }
+        .loginContainer input[type="checkbox"] {
+            margin-right: 10px;
+            accent-color:#28AFB0;
+        }
+        .bttn {
+            background-color: #28AFB0;
+            color: #F0E7E7;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 2% 0; /* Space between buttons */
+            margin-left: 7%;
+            border-radius: 4px; /* Rounded corners for buttons */
+            border: none; /* Remove border */
+            cursor: pointer;
+            width: 80%; /* Full width */
+        }
+        .bttn:hover {
+            background-color: #19647E;
+        }
+
+        .loginContainer h1{
+            color:#F0E7E7;
+            text-align: center;
+        }
+        .loginContainer label{
+            color:#F0E7E7;
+        }
+
+        .pass_button a{
+            color:#83BFBF;
+        }
+        .header h1{
+            color: #CFDDDC;
+            text-align: center;
+            padding: 3%;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            opacity: 80%;
+
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>EduMetrics</h1>
+</div>
+<div class="loginContainer">
+    <h1>Teacher Login</h1>
+    <form action="/submit" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <label>
+            <input type="checkbox" name="remember"> Remember Me
+        </label>
+        <a href="{{url_for('homepage_teach')}}" class="bttn">Login</a>
+    </form>
+    <div class = "pass_button">
+        <p><a href="#">Forgot Password?</a></p>
+    </div>
+</div>
+</body>
+</html>

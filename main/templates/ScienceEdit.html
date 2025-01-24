@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+        <script type="text/javascript">
+
+        function handleClick(evt) {
+          var node = evt.target || evt.srcElement;
+          if (node.name == 'edit') {
+            node.value = "Modify";
+          }
+        }
+
+    </script>
+    <style>
+    body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #304442;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    .container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #FFFFFF;
+            color: #000000;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+     .header {
+            background-color: #28AFB0;
+            padding: 20px;
+            text-align: center;
+        }
+     .header h1 {
+            margin: 0;
+            color: #FFFFFF;
+            font-size: 1.8em;
+        }
+     .content {
+            padding: 20px;
+        }
+      .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+      .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .table th {
+            background-color: #28AFB0;
+            color: #FFFFFF;
+        }
+        .table .grade2{
+          color:white;
+          background-color: #d52121;
+        }
+        .table .grade3{
+          color:white;
+          background-color: #ff7300;
+        }
+        .table .grade4{
+          color: #ffffff;
+          background-color: #ffc400;
+        }
+        .table .grade5{
+          color:white;
+          background-color: lightseagreen;
+        }
+        .table .grade6{
+          color:white;
+          background-color: forestgreen;
+        }
+        .table td button:hover, button:active{
+          color: #b5b4b4;
+          background-color: rgba(230, 230, 230, 0.62);
+        }
+        .table .late{
+          color:white;
+          background-color: rgba(255, 165, 0, 0.66);
+        }
+        .table .absent{
+          color:white;
+          background-color:#d52121;
+        }
+  </style>
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "header">
+          <h1>SCIENCE</h1>
+        </div>
+      <div class = "content">
+        <h2>Grades and Absences</h2>
+        <table class="table">
+
+                <thead>
+                    <tr>
+                        <th>Students</th>
+                        <th>Grade</th>
+                        <th>Absences</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>Math</td>
+
+                      <td><button class="grade2">2</button><button class="grade3">3</button><button class="grade4">4</button><button class="grade5">5</button><button class="grade6">6</button></td>
+                      <td><button class = "absent">Absent</button><button class="late">Late</button></td>
+                    </tr>
+                    <tr>
+                      <td>Science</td>
+                      <td><button class="grade2">2</button><button class="grade3">3</button><button class="grade4">4</button><button class="grade5">5</button><button class="grade6">6</button></td>
+                      <td><button class = "absent">Absent</button><button class="late">Late</button></td>
+                    </tr>
+                    <tr>
+                      <td>English</td>
+                      <td><button class="grade2">2</button><button class="grade3">3</button><button class="grade4">4</button><button class="grade5">5</button><button class="grade6">6</button></td>
+                      <td><button class = "absent">Absent</button><button class="late">Late</button></td>
+                    </tr>
+                </tbody>
+        </table>
+      </div>
+    </div>
+</body>
+</html>

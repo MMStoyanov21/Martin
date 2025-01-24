@@ -2,24 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
     <style>
+        body {
+            background-color: #304442;
+            margin:0;
+            font-family: Arial, sans-serif;
+
+        }
+
+        .button-container {
+            background-color: #284F56; /* White background for the container */
+            padding: 20px; /* Padding around the buttons */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            text-align: center; /* Center the buttons */
+            position: absolute; /* Positioning for centering */
+            top: 50%;
+            left: 49%;
+            transform: translate(-50%, -50%); /* Centering */
+        }
+        .button-container h1{
+            color:#F0E7E7;
+        }
         a:link, a:visited {
-          background-color: #12aaaa;
-          color: white;
-          padding: 14px 25px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
+            background-color: #28AFB0;
+            color: #F0E7E7;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px; /* Space between buttons */
+            border-radius: 5%; /* Rounded corners for buttons */
         }
 
         a:hover, a:active {
-          background-color: #217e7e;
+            background-color: #19647E;
         }
+        .header{
+            background: #284F56;
+            width: 100%;
+            margin:0;
+            padding:0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .header h1{
+            color: #CFDDDC;
+            text-align: center;
+            padding: 3%;
+            margin:0;
+            font-size:60px;
+        }
+
     </style>
 </head>
+
 <body>
-    <a href="/after" target="_blank">TEACHER</a>
-    <a href="/after" target="_blank">STUDENT</a>
+    <div class="header">
+        <h1>EduMetrics</h1>
+    </div>
+    <div class="button-container">
+        <h1>HELLO</h1>
+        <a href="{{ url_for('after_login') }}">TEACHER</a>
+        <a href="{{ url_for('after_login1') }}">STUDENT</a>
+    </div>
+
+
 </body>
+<footer>
+</footer>
 </html>
