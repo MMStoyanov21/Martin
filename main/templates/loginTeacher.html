@@ -84,14 +84,15 @@
 </div>
 <div class="loginContainer">
     <h1>Teacher Login</h1>
-    <form action="/submit" method="post">
+    <form action="/loginTeacher" method="post"> <!-- Updated to /loginTeacher -->
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
         <label>
             <input type="checkbox" name="remember"> Remember Me
         </label>
-        <a href="{{url_for('homepage_teach')}}" class="bttn">Login</a>
+        <button type="submit" class="bttn">Login</button>
     </form>
+
     <div class = "pass_button">
         <p><a href="#">Forgot Password?</a></p>
     </div>
